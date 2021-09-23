@@ -10,7 +10,7 @@ import java.util.concurrent.CountDownLatch;
  * 
  * 我认为的bug,未进行双重校验判断.<br/>
  * 
- * 实际不会产生，可能是因为sun.misc.SharedSecrets.getJavaIOAccess().console()本来就返回的是一个单例吧<br/>
+ * 实际未验证出不安全，可能是因为sun.misc.SharedSecrets.getJavaIOAccess().console()本来就返回的是一个单例吧<br/>
  * 如果真的已经处理那么这里这样写让产生误导,做为jdk应该认真的实现双重校验锁
  * @author shuchaowen
  * @see System#console()

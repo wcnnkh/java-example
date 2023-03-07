@@ -21,7 +21,7 @@ public class ConsoleBug {
 	
 	public static void main(String[] args) throws Exception {
 		while(true) {
-			start(Runtime.getRuntime().availableProcessors());
+			start(100);
 		}
 	}
 	
